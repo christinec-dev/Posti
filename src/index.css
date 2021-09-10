@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Notes";
+  src: url(./styles/font/RainbowPaper-6YvPv.ttf);
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+* body {
+  background: #fff7b3 !important;
+}
+* .header {
+  font-weight: bold !important;
+  padding: 30px;
+}
+* .header .add-form {
+  margin-left: 30px;
+}
+* input {
+  width: 100%;
+  height: 100px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  border: 1px solid rgba(251, 78, 78, 0.397);
+}
+* input:focus {
+  border: 3px solid rgba(251, 78, 78, 0.397);
+  outline: none;
+}
+* .btn-block {
+  font-weight: 600 !important;
+  background-color: #fb4e4e !important;
+  height: 50px;
+  color: #ffffff !important;
+  margin-bottom: 80px;
+  margin-top: 2px;
+}
+* .textBold {
+  margin-right: 5px;
+  font-weight: bold;
+}
+* .header-main {
+  text-align-last: center;
+  margin-bottom: 0.9em;
+}
+* .header-main h1 {
+  font-size: 7em;
+  font-family: "Notes";
+  margin-top: 0.4em;
+  text-shadow: 1px 1px rgba(21, 22, 22, 0.294);
+}
+* .header-main .btn-add {
+  font-weight: 600 !important;
+  min-width: 130px;
+  margin-top: -5%;
+}
+* .header-main .delete-btn {
+  font-weight: 600 !important;
+  background-color: #fb4e4e !important;
+  border: none !important;
+  margin-top: -5% !important;
+}
+* .postNote {
+  margin-bottom: 30px;
+}
+* .posti {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px !important;
+}
+* .posts {
+  padding: 2em;
+  background: #07ff83;
+  position: relative;
+  min-height: 8em;
+  max-width: 400px !important;
+  margin: 1em auto;
+  font-family: helvetica;
+  box-shadow: 2px 2px 5px rgba(21, 22, 22, 0.294);
+  margin-bottom: 30px !important;
+  float: left;
+  margin-right: 20px !important;
+}
+* .posts::after {
+  content: "";
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  right: 2em;
+  border-width: 1em;
+  border-style: solid;
+  border-color: #07ff83;
+}
+* .posts::before {
+  content: "";
+  display: table;
+  position: absolute;
+  bottom: -2em;
+  right: 0;
+  border-width: 2em 2em 0 0;
+  border-style: solid;
+  border-color: #00d36a transparent;
+}
+* .single-post {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+* .editPosts {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -50px !important;
+  font-size: 20px;
+}
+* .editPosts .deleteIcon {
+  margin: 20px;
+}
+* .PostDate {
+  font-size: 15px;
+  padding-top: 25px;
+  margin-left: 10px;
+  text-decoration: solid underline #0da157 3px;
+  word-wrap: break-word !important;
+  text-align: left !important;
+}
+* .PostName {
+  padding: 10px;
+  font-size: 3em;
+  font-weight: bold;
+  word-wrap: break-word !important;
+  max-width: 400px !important;
+  height: auto;
+}
+
+/*# sourceMappingURL=index.css.map */

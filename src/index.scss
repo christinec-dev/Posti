@@ -1,0 +1,165 @@
+$base-background: #fff7b3;
+$light: #ffffff;
+$post-underline: rgb(13, 161, 87);
+$post-shadow: rgba(21, 22, 22, 0.294);
+$color: rgb(7, 255, 131);
+$colorDark: darken($color, 10%) transparent;
+$close: rgb(251, 78, 78);
+$input-border: rgba(251, 78, 78, 0.397);
+$input-focus: rgb(255, 250, 234);
+
+
+@font-face {
+    font-family: "Notes";
+    src: url(./styles/font/RainbowPaper-6YvPv.ttf);
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+
+    body {
+        background: $base-background !important;
+    }
+
+    .header {
+        font-weight: bold !important;
+        padding: 30px;
+
+        .add-form {
+            margin-left: 30px;       
+        }
+    }
+
+    input {
+        width: 100%;
+        height: 100px;
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+        border: 1px solid $input-border;
+    }
+
+    input:focus {
+        border: 3px solid $input-border;
+        outline: none;
+    }
+
+    .btn-block {
+        font-weight: 600 !important;
+        background-color: $close !important;
+        height: 50px;
+        color: $light !important;
+        margin-bottom: 80px;
+        margin-top: 2px;
+    }
+
+    .textBold {  
+        margin-right: 5px;
+        font-weight: bold;
+    }
+    
+   
+
+    .header-main {
+        text-align-last: center; margin-bottom: 0.9em;
+
+        h1 {
+            font-size: 7em;
+            font-family: "Notes";
+            margin-top: 0.4em;
+            text-shadow: 1px 1px $post-shadow;
+        } 
+        
+        .btn-add {
+            font-weight: 600 !important;min-width: 130px;
+            margin-top: -5%;
+        }
+    
+        .delete-btn {
+            font-weight: 600 !important;
+            background-color: $close !important;
+            border: none !important;
+            margin-top: -5% !important;
+        }
+    }
+
+    .postNote {     
+       margin-bottom: 30px;
+    }  
+    .posti {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 10px !important;
+    }
+
+    .posts {
+        padding: 2em;
+        background: $color;
+        position: relative;
+        min-height: 8em;
+        max-width: 400px !important;
+        margin: 1em auto;
+        font-family: helvetica;
+        box-shadow: 2px 2px 5px $post-shadow;
+        margin-bottom: 30px !important;
+        float: left;
+        margin-right: 20px !important;
+    }
+
+    .posts::after {
+        content: "";
+        position: absolute;
+        bottom: -2em;
+        left: 0;
+        right: 2em;
+        border-width: 1em;
+        border-style: solid;
+        border-color: $color;  
+    }
+
+    .posts::before{
+        content: "";display: table;
+        position: absolute;
+        bottom: -2em;
+        right: 0;
+        border-width: 2em 2em 0 0;
+        border-style: solid;
+        border-color: $colorDark;
+    }
+
+    .single-post {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+ 
+    .editPosts {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -50px !important; 
+        font-size: 20px;
+
+         .deleteIcon {
+            margin: 20px;
+         }
+    }
+  
+    .PostDate {
+        font-size: 15px;
+        padding-top: 25px;
+        margin-left: 10px;
+        text-decoration: solid underline $post-underline 3px;
+        word-wrap: break-word !important;text-align: left !important;
+    }
+
+    .PostName {
+        padding: 10px;
+        font-size: 3em;
+        font-weight: bold;
+        word-wrap: break-word !important;
+        max-width: 400px !important;
+        height: auto;
+    }
+}
